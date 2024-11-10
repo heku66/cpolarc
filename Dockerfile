@@ -2,12 +2,12 @@
 FROM alpine:latest
 
 # 设置工作目录
-WORKDIR /root
+WORKDIR /
 # 安装 wget 和 unzip 工具
 # RUN apk --no-cache add wget unzip
 RUN set -ex mkdir ./cpolarc
 
-WORKDIR /root/cpolarc
+WORKDIR /cpolarc
 COPY cpolar .
 COPY cpolar.yml .
 COPY go.sh .
