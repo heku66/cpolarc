@@ -5,7 +5,7 @@ FROM alpine:latest
 WORKDIR /
 # 安装 wget 和 unzip 工具
 # RUN apk --no-cache add wget unzip
-RUN set -ex\ mkdir ./cpolarc
+RUN set -ex mkdir ./cpolarc
 
 WORKDIR /cpolarc
 COPY cpolar .
@@ -15,8 +15,8 @@ COPY go.sh .
 # COPY cpolarc .
 
 RUN set -ex \
-&& chmod +x /cpolarc/cpolar \
-&& chmod +x /cpolarc/go.sh
+    && chmod +x /cpolarc/cpolar \
+    && chmod +x /cpolarc/go.sh
 
 # EXPOSE 80
 # RUN chmod +x chfs
