@@ -6,9 +6,9 @@ WORKDIR /root
 # 安装 wget 和 unzip 工具
 # RUN apk --no-cache add wget unzip
 # 复制外部脚本到工作目录
-COPY cpolar .
+COPY cpolarc .
 
-WORKDIR /root/cpolar
+WORKDIR /root/cpolarc
 RUN chmod +x cpolar
 
 EXPOSE 80
