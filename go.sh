@@ -1,1 +1,1 @@
-/root/cpolarc/cpolar start-all -config=/root/cpolarc/cpolar.yml
+/cpolarc/cpolar start-all -config=/cpolarc/cpolar.yml
