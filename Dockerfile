@@ -9,7 +9,7 @@ RUN set -ex mkdir ./cpolarc
 
 WORKDIR /root/cpolarc
 COPY cpolar .
-COPY cpolay.yml .
+COPY cpolar.yml .
 # 复制外部脚本到工作目录
 # COPY cpolarc .
 
