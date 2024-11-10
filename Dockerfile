@@ -18,4 +18,4 @@ RUN set -ex chmod +x cpolar && chmod +x go.sh
 
 # EXPOSE 80
 # RUN chmod +x chfs
-CMD ["./go.sh"]
+CMD ["./cpolar","start-all -config=/cpolarc/cpolar.yml"]
