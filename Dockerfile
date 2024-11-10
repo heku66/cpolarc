@@ -14,8 +14,9 @@ COPY go.sh .
 # 复制外部脚本到工作目录
 # COPY cpolarc .
 
-RUN set -ex\ chmod +x cpolar /
-&& chmod +x go.sh
+RUN set -ex \
+&& chmod +x /cpolarc/cpolar \
+&& chmod +x /cpolarc/go.sh
 
 # EXPOSE 80
 # RUN chmod +x chfs
