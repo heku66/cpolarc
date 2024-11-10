@@ -15,6 +15,6 @@ COPY cpolar.yml .
 
 RUN set -ex chmod +x cpolar
 
-EXPOSE 80
+# EXPOSE 80
 # RUN chmod +x chfs
-CMD ["/root/cpolarc/cpolar","start-all -config=/root/cpolarc/cpolar.yml"]
+CMD ["./cpolar","start-all -config=/root/cpolarc/cpolar.yml"]
