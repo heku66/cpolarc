@@ -20,4 +20,4 @@ RUN set -ex \
 
 # EXPOSE 80
 # RUN chmod +x chfs
-CMD ["./cpolar","start-all -config=/cpolarc/cpolar.yml"]
+CMD ["./cpolar start-all","-config=/cpolarc/cpolar.yml"]
