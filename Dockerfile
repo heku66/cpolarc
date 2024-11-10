@@ -10,11 +10,12 @@ RUN set -ex mkdir ./cpolarc
 WORKDIR /root/cpolarc
 COPY cpolar .
 COPY cpolar.yml .
+COPY go.sh .
 # 复制外部脚本到工作目录
 # COPY cpolarc .
 
-RUN set -ex chmod +x cpolar
+RUN set -ex chmod +x cpolar && chmod +x go.sh
 
 # EXPOSE 80
 # RUN chmod +x chfs
-CMD ["./cpolar","start-all -config=/root/cpolarc/cpolar.yml"]
+CMD ["./go.sh"]
